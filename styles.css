@@ -1,0 +1,205 @@
+*{
+    font-family: montserrat;
+}
+
+body{
+    background: f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-nav{
+    text-align: center;
+}
+
+.navbar-light .navbar-brand{
+    color :#000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-bar .navbar-link{
+    color: #000;
+}
+.nav-item {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.4s ease-in-out;
+}
+.nav-item a{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+}
+.w-100{
+    height: 100vh;
+}
+
+.about-section-padding .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}    
+.about-text h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .card-body i{
+    font-size: 50px;
+    margin-top: 15px;
+}
+.services .card-body {
+    height: 540px;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    
+}
+.team .card-body {
+    font-size: 20px;
+    height: 300px; 
+}
+.team .card-body i{
+    height: 60px;
+    font-size: 2rem;
+}
+.team .card-body p{
+    height: 100px;
+}
+.team .card-body h3{
+    height: 60px;
+}
+
+
+
+.portfolio .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.team .card{
+    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+}
+.btn-conteiner{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.btn-conteiner p{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+.btn-conteiner .btn-redes{
+    height: 60px;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: aliceblue;
+    line-height: 60px;
+    font-size: 26px;
+}
+
+
+.conteiner__img {
+    width: 100%;
+    height: 22.5rem;
+    background-image: url(/img/hombre\ trabajando\ 1\ banner.png);
+    margin-top: 3rem;
+}
+
+.conteiner__img__2 {
+    width: 100%;
+    height: 22.5rem;
+    background-image: url(/img/cortando\ metal\ 2\ banner.png);
+    margin-top: 3rem;
+}
+
+#footer{
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-redes {
+    display: inline-block;
+    transition: background-color 1s, border-color 1s;
+    background-color: #000000; 
+    color: #000000;
+}
+
+.btn-redes:hover {
+    background-color: #ffffff; 
+    border-color: #000000; 
+    color: #000000;
+}
+.trademark {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff; 
+    font-size: 12px; 
+    z-index: 999; 
+}
+
+@media screen and (max-width: 768px) {
+    .card-body {
+        height: 250px;
+    }
+}
