@@ -68,7 +68,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img style="background-image: url(img/home-1.jpg);" src="" class="d-block w-100" alt="...">
+            <img style="background-image:url(img/home-1.jpg);" src="" class="d-block w-100" alt="...">
             <div class="carousel-caption pb-5">
               <h5>MISIÓN</h5>
               <p>Proveer soluciones de ingeniería, productos y servicios al a Industria con el objetivo de lograr la satisfacción de nuestros clientes.</p>
@@ -87,7 +87,7 @@
             <img style="background-image: url(img/home-3.jpg);" src="" class="d-block w-100" alt="...">
             <div class="carousel-caption pb-5">
               <h5>VALORES</h5>
-              <p>Profesionalidad, Trabajo en equipo, Responsabilidad, Calidad, Innovación, Satisfacción del Cliente, Mejora Continua y Compromiso con el Medio Ambiente. </p>
+              <p>Profesionalidad, trabajo en equipo, responsabilidad, calidad e inovación,satisfacción, mejora continua y compromiso con el Medio Ambiente. </p>
               
             </div>
           </div>
@@ -123,7 +123,40 @@
                 
             
           </section>
-        
+        <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="img/client-1.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
 
       <!--services section-->
 
@@ -194,6 +227,15 @@
                   <img src="/img/SIyMI.jpg" class="img-fluid" alt="...">
               </div>
             </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <i class="bi bi-wrench-adjustable"></i>
+                <h4><a>•	Diseño, Fabricacion y Consultoria Industrial.</a></h4>
+                <p>En Metalize realizamos desarrollos de ingenieria de producto, desde la factibilidad de la idea, los procesos de fabricacion y documentacion tecnica, e implantacion del producto, dispositivo o proceso productivo.
+                  </p>
+                  <img src="/img/consultoria industrial.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
             
   
         </div>
@@ -245,5 +287,35 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elementsToAnimate = document.querySelectorAll("p, img"); // Selecciona todos los elementos <p> y <img>
+
+        function animateOnScroll() {
+            elementsToAnimate.forEach((element) => {
+                const position = element.getBoundingClientRect();
+                const isVisible = position.top >= 0 && position.bottom <= window.innerHeight;
+
+                if (isVisible && element.classList.contains('hidden')) {
+                    if (element.tagName === "P") {
+                        element.classList.add("animate-left");
+                    } else if (element.tagName === "IMG") {
+                        element.classList.add("animate-right");
+                    }
+                    element.classList.remove('hidden');
+                }
+            });
+        }
+
+        elementsToAnimate.forEach((element) => {
+            element.classList.add('hidden'); // Añade la clase 'hidden' para ocultar inicialmente los elementos
+        });
+
+        window.addEventListener("scroll", animateOnScroll);
+
+        // Ejecuta la función una vez para activar elementos que ya están visibles al cargar la página
+        animateOnScroll();
+    });
+</script>
 </body>
 </html>
