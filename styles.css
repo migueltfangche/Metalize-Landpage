@@ -30,7 +30,7 @@ body{
 .carousel-caption p{
     width: 60%;
     margin: auto;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.9;
 }
 
@@ -149,6 +149,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 48px;
+}
+.about-text p{
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
 }
 
 
